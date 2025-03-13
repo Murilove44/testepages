@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+.slideshow-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+@keyframes slideshow {
+  0% {
+      background-image: url('imagens_fundo/mark_invencivel.jpg');
+  }
+  12.5% {
+      background-image: url('imagens_fundo/one_punch.jpg');
+  }
+  25% {
+      background-image: url('imagens_fundo/rick_and_morty.jpg');
+  }
+  37.5% {
+      background-image: url('imagens_fundo/strangerthings.jpg');
+  }
+  50% {
+      background-image: url('imagens_fundo/the_last.jpg');
+  }
+  62.5% {
+      background-image: url('imagens_fundo/the_wichter.jpg');
+  }
+  75% {
+      background-image: url('imagens_fundo/theboys.jpg');
+  }
+  87.5% {
+      background-image: url('imagens_fundo/logan-2017.jpg');
+  }
+  100% {
+    background-image: url('imagens_fundo/la_casa.jpg') ;
+  }
+}
+
+body {
+  animation: slideshow 100s infinite; 
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+    padding-left: 40px;
+    min-height: 100vh;
+    animation: slideshow 30s infinite;
+    margin: 0px;
+}
+
+article {
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #F1F0CC;
+  text-decoration: none;
+}
+
+p {
+  color: #F1F0CC;
+}
+
+h1 {
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F1F0CC;
+    text-shadow: 5px 4px 5px black;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F1F0CC;
+    text-shadow: 5px 4px 5px black;
+    font-size: 1.7em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  padding: 20px;
+  margin-top: 150px;
+  margin-right: 75px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(26, 26, 26, 0.425); 
+  color: #fff;
+  border: 1px solid rgba(51, 51, 51, 0.199); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(60px); 
+  width: 500px; 
+  height: 500px;
+}
+
+  #ultimo {
+    margin-left: 24px;
+    padding-right: 15px;
+  }
+
+  #ultimoNome {
+    left: 32px;
+  }
+  
+  .title {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #fcfafac7;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #ff0003ed;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgb(223, 27, 27);
+  }
+  
+  .signin a {
+    color: #ff0000cc;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #fff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    height: 38px;
+    width: 515px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ffffffb0;
+    transition: all .3s ease-in-out;
+  }
+  
+  .submit:hover {
+    background-color: #ff0000da;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invencivel</title>
+    <link rel="stylesheet" href="c:\Users\Sousa\Documents\programas\meusite\css\style1.css">
+    <link rel="shortcut icon" href="LoveFlix.ico" type="image/x-icon">
+    <link rel="stylesheet" href="invencivel.css">
+</head>
+<body>
+    <main>
+        <h1>Invencivel</h1>
+        <h3>Trailer dublado:</h3>
+        <video width="1090" height="613" poster="posters/invencivel.jpg" controls loop>
+            <source src="Trailers/Invencível _ Temporada 3 Oficial Trailer _ Prime Video.mp4" type="video/mp4">
+        </video>
+        <div class="movie-container">
+            <nav>
+                <p><strong>Duração:</strong> 3 temporadas | <strong>Gênero:</strong> Animação, Ação, Super-heróis, Ficção Científica, Drama</p> 
+                <button class="botao-temporadas"  onclick="clickMenu()">
+                    <span class="texto">Temporadas</span>
+                </button>
+                <!--Inicialmente escondido-->
+                <menu id="lista">
+                    <ul>
+                        <li><div class="temp1">Temporada 1</div></li>
+                        <li><div class="temp2">Temporada 2</div></li>
+                        <li><div class="temp3">Temporada 3</div></li>
+                    </ul>
+                </menu> 
+            </nav>
+
+            <p><strong>Avaliação:</strong> ⭐ 8.7/10</p>
+            <button class="animated-button" aria-label="Adicionar o filme à Minha Lista" data-added="false">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+                <span class="text">Adicionar à Minha Lista</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                </svg>
+            </button>
+            <h2>Sinopse:</h2>
+        <p>A série acompanha Mark Grayson (Steven Yeun), um jovem de 17 anos que descobre ter superpoderes. Seu pai, Omni-Man (J.K. Simmons), é o herói mais poderoso da Terra, vindo do planeta Viltrum. Enquanto Mark aprende a dominar seus poderes e tenta equilibrar sua vida pessoal e heroica, ele descobre segredos sombrios sobre seu pai e sobre os Viltrumitas, que podem colocar todo o planeta em perigo.
+            Com batalhas brutais, dilemas morais e um universo rico em personagens, Invencível traz uma abordagem madura e impactante para o gênero de super-heróis.</p>
+        </div>
+    </main>
+    <script src="script/invencivel.js"></script>
+    <footer>
+        <article>
+            <a href="#">Termos e aviso de privacidade</a>
+            <a href="#">Enviar feedback</a>
+            <a href="#">Ajuda</a>
+            <p>2024-2025, Loveflix.com, Inc.</p>
+        </article>
+    </footer>
+</body>
+</html>

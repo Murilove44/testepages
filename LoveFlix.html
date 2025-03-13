@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveFlix</title>
+    <link rel="stylesheet" href="loveflix.css">
+    <link rel="shortcut icon" href="loveflix.ico" type="image/x-icon">
+</head>
+<body>
+    <header> 
+        <!-- barra lateral que tô testando --> 
+        <input type="checkbox" id="barra">
+        <label class="barra" for="barra">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- segunda parte da barra -->
+        <div class="sidebar">
+            <li><a href="minhaconta.html">Minha Conta</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="minha_lista.html">Minha Lista</a></li>
+        </div>
+
+        <div id="User" class="usuario">
+            <p>Usuário</p>
+            <label class="popup">
+                <input type="checkbox" />
+                <div tabindex="0" class="burger">
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    height="20"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                    d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                    ></path>
+                </svg>
+                </div>
+                <nav class="popup-window">
+                <legend>Seu perfil</legend>
+                <ul>
+                    <li>
+                        <a id="login" href="pag_inicial.html">
+                            <button>
+                                <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.2"
+                                stroke-linecap="round"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M19 4v6.406l-3.753 3.741-6.463-6.462 3.7-3.685h6.516zm2-2h-12.388l1.497 1.5-4.171 4.167 9.291 9.291 4.161-4.193 1.61 1.623v-12.388zm-5 4c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-1c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm6.708.292l-.708.708v3.097l2-2.065-1.292-1.74zm-12.675 9.294l-1.414 1.414h-2.619v2h-2v2h-2v-2.17l5.636-5.626-1.417-1.407-6.219 6.203v5h6v-2h2v-2h2l1.729-1.729-1.696-1.685z"
+                                ></path>
+                                </svg>
+                                <span>Fazer Login</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="cadastro" href="cadastro.html">
+                            <button>
+                                <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path
+                                    d="M2.598 9h-1.055c1.482-4.638 5.83-8 10.957-8 6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5c-5.127 0-9.475-3.362-10.957-8h1.055c1.443 4.076 5.334 7 9.902 7 5.795 0 10.5-4.705 10.5-10.5s-4.705-10.5-10.5-10.5c-4.568 0-8.459 2.923-9.902 7zm12.228 3l-4.604-3.747.666-.753 6.112 5-6.101 5-.679-.737 4.608-3.763h-14.828v-1h14.826z"
+                                ></path>
+                                </svg>
+                                <span>Cadastrar</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </label>
+        </div>
+        <nav>
+            <p id="Tema-escuro">Tema escuro:</p>
+            <div class="checkbox-wrapper-8">
+                <input type="checkbox" id="cb3-8" class="tgl tgl-skewed">
+                <label for="cb3-8" data-tg-on="OFF" data-tg-off="ON" class="tgl-btn"></label>
+            </div>
+            <script src="script/loveflix.js"></script>
+            <h1 >Loveflix </h1>
+            <h3><input placeholder="Digite seu texto..." class="input" name="text" type="text"></h3>
+        </nav>
+    </header>
+    <main>
+        <section id="filmes">
+            <div class="categoria-container">
+                <h2>Ação</h2>
+                <div class="filmes-container" id="acaoContainer">
+                    <div class="filme" data-nome="Capitão América 2: O Soldado Invernal">
+                        <abbr title="Capitão América 2: O Soldade Invernal (2014)"><a href="soldado_invernal.html"><img src="imagens/capamerica.jpg" alt="Capitão América"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Thor Ragnarok">
+                        <abbr title="Thor Ragnarok (2017)"><a href="thor.html"><img src="imagens/ragnarok.jpg" alt="Thor Ragnarok"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Logan">
+                        <abbr title="Logan (2017)"><a href="Logan.html"><img src="imagens/logan.jpg" alt="Logan"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Pantera Negra">
+                        <abbr title="Pantera Negra"><a href="Pantera_Negra.html"><img src="imagens/panteranegra.jpg" alt="Pantera Negra"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Capitão América - Guerra Civil">
+                        <abbr title="Capitão América - Guerra Civil"><a href="guerra_civil.html"><img src="imagens/guerracivil.jpg" alt="Guerra Civil"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Homem-Aranha, Sem Volta pra Casa">
+                        <abbr title="Homem-Aranha, Sem Volta pra Casa"><a href="homem-aranha.html"><img src="imagens/semvoltapracasa.jpg" alt="Homem Aranha"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Capitão América, O Primeiro Vingador">
+                        <abbr title="Capitão América, O Primeiro Vingador"><a href="capitao.html"><img src="imagens/capitaoamerica_oprimeiro.jpg" alt="Capitão America"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Vingadores Ultimato">
+                        <abbr title="Vingadores Ultimato"><a href="vingadores.html"><img src="imagens/ving_ultimato.jpg" alt="Vingadores Ultimato"></a></abbr>
+                    </div>
+                    <div class="filme" data-nome="Vingadores, Era de Ultron">
+                        <abbr title="Vingadores, Era de Ultron"><a href="era_de_ultron.html"><img src="imagens/ving_eradeultron.png" alt="Vingadores, Era de Ultron"></a></abbr>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="scrollLeftButton" data-container="acaoContainer">◀</button>
+                    <button class="scrollRightButton" data-container="acaoContainer">▶</button>
+                </div>
+            </div>
+
+            <h2>Séries de ação</h2>
+            <div class="serie" data-nome="Invencivel">
+                <abbr title="Invencível"><a href="invencivel.html"><img src="imagens/invencivel.jpg" alt="Invencivel"></a></abbr>
+            </div>
+
+            <div class="categoria-container">
+                <h2>Comédia</h2>
+                <div class="filmes-container" id="comediaContainer">
+                    <div class="filme" data-nome="Golpe Baixo">
+                        <abbr title="Golpe Baixo (2005)"><a href="filme_golpe_baixo.html"><img src="imagens/golpebaixo.jpg" alt="Golpe Baixo"></a></abbr>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="scrollLeftButton" data-container="comediaContainer">◀</button>
+                    <button class="scrollRightButton" data-container="comediaContainer">▶</button>
+                </div>
+            </div>
+
+            <div class="categoria-container">
+                <h2>Suspense</h2>
+                <div class="filmes-container" id="suspenseContainer">
+                    <div class="filme" data-nome="Corra">
+                        <abbr title="Corra (2017)"><img src="imagens/corra.png" alt="Corra"></abbr>
+                    </div>
+                    <div class="filme" data-nome="Os Suspeitos">
+                        <abbr title="Os Suspeitos (2013)"><img src="imagens/ossuspeitos.png" alt="Os Suspeitos"></abbr>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="scrollLeftButton" data-container="suspenseContainer">◀</button>
+                    <button class="scrollRightButton" data-container="suspenseContainer">▶</button>
+                </div>
+            </div>
+            <h2>Ficção científica</h2>
+            <abbr title="Alien, O 8 pasageiro (1972)"><img src="imagens/alien05.png" alt=""></abbr>
+            <h2>Românticos</h2>
+            <abbr title="5 Passos de Você (2019)"><img src="imagens/5passos.jpg" alt=""></abbr>
+            <h2>Populares</h2>
+            <abbr title="Trem Bala (2022)"><img src="imagens/trembala.jpg" alt=""></abbr>
+            <h2>Terror</h2>
+            <abbr title="Carteira de Trabalho"><img src="imagens/carteira.jpg" alt=""></abbr>
+            <h2>Comédias românticas</h2>
+            <h2>Infantil</h2>
+            <abbr title="Fuga das Galinhas: A Ameaça dos Nuggets (2023)"><img src="imagens/fuga.jpg" alt=""></abbr>
+        </div>
+    </div>
+            </div>
+    </section>
+    </main>
+    <footer>
+        <article>
+            <a href="#">Termos e aviso de privacidade</a>
+            <a href="#">Enviar feedback</a>
+            <a href="#">Ajuda</a>
+            <p>2024-2025, Loveflix.com, Inc.</p>
+        </article>
+    </footer>
+</body>
+</html>
